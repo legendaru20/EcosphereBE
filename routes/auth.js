@@ -23,7 +23,7 @@ router.post('/register', async (req, res) => {
     res.status(201).json({ message: "Registrasi berhasil", result });
   } catch (error) {
     console.error('Error during registration:', error); // Log untuk debugging
-    res.status(500).json({ message: 'Terjadi kesalahan saat registrasi' });
+    res.status(500).json({ message: 'Terjadi kesalahan saat registrasi cuy  ' });
   }
 });
 
@@ -51,7 +51,7 @@ router.post('/login', async (req, res) => {
     res.json({ success: true, token: 'Bearer ' + token, username : user.username });
   } catch (error) {
     console.error('Error during login:', error); // Log untuk debugging
-    res.status(500).json({ error: 'Server error' });
+    res.status(500).json({ error: 'Server error cuy' });
   }
 });
 
